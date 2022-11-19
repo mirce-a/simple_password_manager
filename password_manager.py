@@ -2,6 +2,7 @@ from modules import menu
 from modules import manager
 
 from os import system, name
+import sys
 
 def clearscr():
     if name == "nt":
@@ -31,11 +32,11 @@ if __name__ == "__main__":
             if c == '5':
                 clearscr()
                 print("Goodbye")
-                exit()
+                sys.exit()
             input("Press enter to continue...")
             clearscr()
         except KeyboardInterrupt:
             clearscr()
             print("Goodbye!")
-            exit()
+            sys.exit()
 
